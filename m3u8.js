@@ -44,7 +44,7 @@
 
 [mitm] 
 
-hostname = *.zihzot.*
+hostname = *.zihzot.*, *.hubgyf.*
 
 
 
@@ -56,7 +56,7 @@ const $ = new Env("GOGOGOGO");
 let url = $request.url, headers = $request.headers;
 
 
-url = url.replace('h5play', 'zihzot');
+url = url.replace('h5play', 'zihzot','hubgyf');
 
 // 检查是否含有 X-Playback-Session-Id 头部
 if (headers.hasOwnProperty("X-Playback-Session-Id")) {
